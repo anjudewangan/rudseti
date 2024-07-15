@@ -65,7 +65,7 @@
         format: 'MM'
       },
     },
-    colors: [TivoAdminConfig.secondary, TivoAdminConfig.primary],
+    colors: [TivoAdminConfig.secondary, TivoAdminConfig.success],
   };
   var chart = new ApexCharts(document.querySelector("#revenue-chart"), options);
   chart.render();
@@ -110,7 +110,7 @@
         },
       },
     },
-    colors: [TivoAdminConfig.primary, TivoAdminConfig.secondary, TivoAdminConfig.secondary, TivoAdminConfig.secondary],
+    colors: [TivoAdminConfig.success, TivoAdminConfig.secondary, TivoAdminConfig.secondary, TivoAdminConfig.secondary],
   };
   var chart1 = new ApexCharts(document.querySelector("#user-chart"), options1);
   chart1.render();
@@ -188,7 +188,7 @@
     },
     fill: {
       opacity: 1,
-      colors: [TivoAdminConfig.primary, '#eeeffe']
+      colors: [TivoAdminConfig.success, '#eeeffe']
     },
     legend: {
       show: false
@@ -202,17 +202,17 @@
       type: 'area',
       name: 'Daily',
       data: [0, 20, 10, 45, 30, 43, 25, 38, 30, 42, 25, 40, 25, 0],
-      color: '#f0f1fe',
+      color: '#ebf4d7',
     }, {
       type: 'area',
       name: 'Weekly',
       data: [0, 12, 6, 25, 13, 24, 15, 24, 20, 26, 16, 22, 16, 0],
-      color: TivoAdminConfig.primary,
+      color: TivoAdminConfig.success,
     }, {
       type: 'line',
       name: 'Monthly',
       data: [0, 19, 14, 22, 35, 30, 35, 30, 40, 30, 39, 20, 34, 0],
-      color: TivoAdminConfig.primary,
+      color: TivoAdminConfig.success,
     }],
     chart: {
       height: 280,
@@ -230,7 +230,7 @@
         x: 300,
         strokeDashArray: 0,
         borderWidth: 3,
-        borderColor: TivoAdminConfig.primary,
+        borderColor: TivoAdminConfig.success,
       },
       ],
       points: [{
@@ -238,8 +238,8 @@
         y: 48,
         marker: {
           size: 8,
-          fillColor: TivoAdminConfig.primary,
-          strokeColor: TivoAdminConfig.primary,
+          fillColor: TivoAdminConfig.success,
+          strokeColor: TivoAdminConfig.success,
           radius: 5,
         },
         label: {
@@ -271,7 +271,7 @@
             x: 100,
             strokeDashArray: 0,
             borderWidth: 3,
-            borderColor: TivoAdminConfig.primary,
+            borderColor: TivoAdminConfig.success,
           },
           ],
           points: [{
@@ -279,8 +279,8 @@
             y: 48,
             marker: {
               size: 8,
-              fillColor: TivoAdminConfig.primary,
-              strokeColor: TivoAdminConfig.primary,
+              fillColor: TivoAdminConfig.success,
+              strokeColor: TivoAdminConfig.success,
               radius: 5,
             },
             label: {
@@ -303,7 +303,7 @@
         shade: 'dark',
         type: "horizontal",
         shadeIntensity: 1,
-        gradientToColors: [TivoAdminConfig.secondary, TivoAdminConfig.primary],
+        gradientToColors: [TivoAdminConfig.secondary, TivoAdminConfig.success],
         inverseColors: true,
         opacityFrom: 1,
         opacityTo: 0.2,
@@ -365,13 +365,13 @@
   //           backgroundColor: "transparent",
   //           regionStyle: {
   //               initial: {
-  //                   fill: TivoAdminConfig.primary
+  //                   fill: TivoAdminConfig.success
   //               } 
   //           },
   //           zoomButtons : false,
   //           markers: [
   //               { latLng: [39.91, 116.36], name: 'china', style: {r: 8, fill:'#61ae41'}},
-  //               { latLng: [24.774, 46.73], name: 'saudi Arbia', style: {r: 8, fill: TivoAdminConfig.primary}},
+  //               { latLng: [24.774, 46.73], name: 'saudi Arbia', style: {r: 8, fill: TivoAdminConfig.success}},
   //               { latLng: [43.238949, 76.889709], name: 'Kazakhstan', style: {r: 8, fill: TivoAdminConfig.secondary}}
   //           ],
   //           series: {

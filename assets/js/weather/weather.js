@@ -66,7 +66,7 @@ function showData(DataWeather) {
     // console.log(sunsetTime);
 
     showFinal.innerHTML = `
-    <div class="weather-data f-w-800 f-20">${finalTemp}<sup>&#176</sup>C</div><div class="weather-description font-primary f-w-700 text-capitalize"">${DataWeather.weather[0].description}</div><p class="city-name f-10">Beautiful Day in ${DataWeather.name}</p>`;
+    <div class="weather-data f-w-800 f-20">${finalTemp}<sup>&#176</sup>C</div><div class="weather-description font-success f-w-700 text-capitalize"">${DataWeather.weather[0].description}</div><p class="city-name f-10">Beautiful Day in ${DataWeather.name}</p>`;
 
 }
 

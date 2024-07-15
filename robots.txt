@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /scripts/
+
+# Allow all agents to access the rest of the site
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: 
