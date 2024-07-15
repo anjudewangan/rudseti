@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logoIcon/cssdaImg.png" type="image/x-icon">
+    <title>CSSDA1499 | Inbound Calls</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/font-awesome.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+    <!-- Font Awsome  -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    <!-- Loader starts-->
+    <div class="loader-wrapper">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <!-- Loader ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start-->
+        <div class="page-header">
+            <div class="header-wrapper row m-0">
+                <form class="form-inline search-full col" action="#" method="get">
+                    <div class="form-group w-100">
+                        <div class="Typeahead Typeahead--twitterUsers">
+                            <div class="u-posRelative"> <input
+                                    class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
+                                    placeholder="Search .." name="q" title="" autofocus>
+                                <div class="spinner-border Typeahead-spinner" role="status"><span
+                                        class="sr-only">Loading...</span> </div><i class="close-search"
+                                    data-feather="x"></i>
+                            </div>
+                            <div class="Typeahead-menu"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="header-logo-wrapper col-auto p-0">
+                    <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i>
+                    </div>
+                    <div class="logo-header-main"><a href="index.html"><img class="img-fluid for-light img-100" src=""
+                                alt=""><img class="img-fluid for-dark" src="" alt=""></a></div>
+                </div>
+                <div class="left-header col horizontal-wrapper ps-0">
+                    <div class="left-menu-header">
+                        <ul class="app-list">
+                            <li class="onhover-dropdown">
+                                <div class="app-menu"> <i data-feather="folder-plus"></i></div>
+                                <ul class="onhover-show-div left-dropdown">
+                                    <li> <a href="file-manager.html">File Manager</a></li>
+                                    <li> <a href="kanban.html"> Kanban board</a></li>
+                                    <li> <a href="social-app.html"> Social App</a></li>
+                                    <li> <a href="bookmark.html"> Bookmark</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="header-left">
+                            <li class="onhover-dropdown"><a href="./index.html"><span
+                                        class="f-w-600">Dashboard</span></a><span><i class="middle"
+                                        data-feather="chevron-down"></i></span> </li>
+                            <li class="onhover-dropdown"><span class="f-w-600">Forms</span><span><i class="middle"
+                                        data-feather="chevron-down"></i></span>
+                                <ul class="onhover-show-div left-dropdown">
+                                    <li class="flyout-right"><a href="javascript:void(0)">Inbound</a>
+                                        <ul>
+                                            <li> <a href="inbound.html">Query Form</a></li>
+                                            <li> <a href="inbound-calls.html">Query List</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="flyout-right"><a href="javascript:void(0)">Outbound</a>
+                                        <ul>
+                                            <li> <a href="tracking.html">Tracking</a></li>
+                                            <li> <a href="tracing.html">Tracing</a></li>
+                                            <li> <a href="placement.html">placement</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="onhover-dropdown"><span class="f-w-600">User Management</span><span><i
+                                        class="middle" data-feather="chevron-down"></i></span>
+                                <ul class="onhover-show-div left-dropdown">
+                                    <li class="flyout-right"><a href="user-list.html">User List</a> </li>
+                                    <li class="flyout-right"><a href="create-new-user.html">Create New User</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-right col-6 pull-right right-header p-0">
+                    <ul class="nav-menus">
+                        <li>
+                            <div class="right-header ps-0">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text mobile-search"><i
+                                                class="fa fa-search"></i></span></div> <input class="form-control"
+                                        type="text" placeholder="Search Here..">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="serchinput">
+                            <div class="serchbox"><i data-feather="search"></i></div>
+                            <div class="form-group search-form"> <input type="text" placeholder="Search here..."> </div>
+                        </li>
+                        <li>
+                            <div class="mode"><i class="fa fa-moon-o"></i></div>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <div class="notification-box"><i data-feather="bell"></i></div>
+                            <ul class="notification-dropdown onhover-show-div">
+                                <li><i data-feather="bell"> </i>
+                                    <h6 class="f-18 mb-0">Notifications</h6>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0"><i data-feather="truck"></i></div>
+                                        <div class="flex-grow-1">
+                                            <p><a href="order-history.html">Delivery processing </a><span
+                                                    class="pull-right">6 hr</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0"><i data-feather="shopping-cart"></i></div>
+                                        <div class="flex-grow-1">
+                                            <p><a href="cart.html">Order Complete</a><span class="pull-right">3
+                                                    hr</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0"><i data-feather="file-text"></i></div>
+                                        <div class="flex-grow-1">
+                                            <p><a href="invoice-template.html">Tickets Generated</a><span
+                                                    class="pull-right">1 hr</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0"><i data-feather="send"></i></div>
+                                        <div class="flex-grow-1">
+                                            <p><a href="email_inbox.html">Delivery Complete</a><span
+                                                    class="pull-right">45 min</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a class="btn btn-primary" href="javascript:void(0)">Check all notification</a></li>
+                            </ul>
+                        </li>
+                        <li class="onhover-dropdown">
+                            <div class="message"><i data-feather="message-square"></i></div>
+                            <ul class="message-dropdown onhover-show-div">
+                                <li><i data-feather="message-square"> </i>
+                                    <h6 class="f-18 mb-0">Messages</h6>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-start">
+                                        <div class="message-img bg-light-primary"><img src="../assets/images/user/3.jpg"
+                                                alt=""></div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="mb-1"><a href="email_inbox.html">Emay Walter</a></h5>
+                                            <p>Do you want to go see movie?</p>
+                                        </div>
+                                        <div class="notification-right"><i data-feather="x"></i></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-start">
+                                        <div class="message-img bg-light-primary"><img src="../assets/images/user/6.jpg"
+                                                alt=""></div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="mb-1"><a href="email_inbox.html">Jason Borne</a></h5>
+                                            <p>Thank you for rating us.</p>
+                                        </div>
+                                        <div class="notification-right"><i data-feather="x"></i></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-start">
+                                        <div class="message-img bg-light-primary"><img
+                                                src="../assets/images/user/10.jpg" alt=""></div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="mb-1"><a href="email_inbox.html">Sarah Loren</a></h5>
+                                            <p>What`s the project report update?</p>
+                                        </div>
+                                        <div class="notification-right"><i data-feather="x"></i></div>
+                                    </div>
+                                </li>
+                                <li><a class="btn btn-primary" href="email_inbox.html">Check Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="maximize"><a href="#!" onclick="javascript:toggleFullScreen()"><i
+                                    data-feather="maximize-2"></i></a></li>
+                        <li class="language-nav">
+                            <div class="translate_wrapper">
+                                <div class="current_lang">
+                                    <div class="lang"><i data-feather="globe"></i></div>
+                                </div>
+                                <div class="more_lang">
+                                    <div class="lang selected" data-value="en"><i
+                                            class="flag-icon flag-icon-us"></i><span class="lang-txt">English<span>
+                                                (US)</span></span></div>
+                                    <div class="lang" data-value="in"><i class="flag-icon flag-icon-in"></i><span
+                                            class="lang-txt">Hindi</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="profile-nav onhover-dropdown">
+                            <div class="account-user"> <img src="../assets/images/svgImg/user-svgrepo-com.svg" alt=""
+                                    width="40px" height="40px"> </div>
+                            <ul class="profile-dropdown onhover-show-div">
+                                <li><a href="user-profile.html"><i data-feather="user"></i><span>Account</span></a></li>
+                                <li><a href="email_inbox.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
+                        </li>
+                        <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Settings</span></a> </li>
+                        <li><a href="../index.html"><i data-feather="log-in"> </i><span>Log Out</span></a></li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+                <script class="result-template"
+                    type="text/x-handlebars-template"> <div class="ProfileCard u-cf"> <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div> <div class="ProfileCard-details"> <div class="ProfileCard-realName">{{name}}</div> </div> </div> </script>
+                <script class="empty-template"
+                    type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
+            </div>
+        </div>
+        <!-- Page Header Ends-->
+        <!-- Page Body Start-->
+        <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <div class="sidebar-wrapper">
+                <div>
+                    <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
+                                src="../assets/images/logoIcon/cssda.png" alt="" width="50px" height="50px"> <span
+                                class="text-light f-w-700 f-16">CSSDA1499</span> </a>
+                        <div class="back-btn"><i data-feather="grid"></i></div>
+                        <div class="toggle-sidebar icon-box-sidebar"><i class="status_toggle middle sidebar-toggle"
+                                data-feather="grid"> </i></div>
+                    </div>
+                    <div class="logo-icon-wrapper"><a href="index.html">
+                            <div class="icon-box-sidebar"><i data-feather="grid"></i></div>
+                        </a></div>
+                    <nav class="sidebar-main">
+                        <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+                        <div id="sidebar-menu">
+                            <ul class="sidebar-links" id="simple-bar">
+                                <li class="back-btn">
+                                    <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2"
+                                            aria-hidden="true"></i></div>
+                                </li>
+                                <li class="menu-box">
+                                    <ul>
+                                        <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                                href="index.html"><i data-feather="home"></i><span
+                                                    class="lan-3">Dashboard</span></a> </li>
+                                        <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                                href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="feather feather-file-text">
+                                                    <path
+                                                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                    </path>
+                                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                                </svg><span>Forms</span>
+                                                <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="sidebar-submenu">
+                                                <li><a class="submenu-title" href="javascript:void(0)">Inbound<span
+                                                            class="sub-arrow"><i class="fa fa-angle-right"></i></span>
+                                                        <div class="according-menu"><i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <ul class="nav-sub-childmenu submenu-content">
+                                                        <li><a href="inbound.html">Query Form</a></li>
+                                                        <li><a href="inbound-calls.html">Query List</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="submenu-title" href="javascript:void(0)">Outbound<span
+                                                            class="sub-arrow"><i class="fa fa-angle-right"></i></span>
+                                                        <div class="according-menu"><i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <ul class="nav-sub-childmenu submenu-content">
+                                                        <li><a href="tracking.html">Tracking</a></li>
+                                                        <li><a href="tracing.html">Tracing</a></li>
+                                                        <li><a href="placement.html">Placement</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                                href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="feather feather-users">
+                                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="9" cy="7" r="4"></circle>
+                                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                                </svg><span>User Management</span>
+                                                <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                                            </a>
+                                            <ul class="sidebar-submenu">
+                                                <li><a class="submenu-title" href="user-list.html">User List<span
+                                                            class="sub-arrow"><i class="fa fa-angle-right"></i></span>
+                                                        <div class="according-menu"><i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a> </li>
+                                                <li><a class="submenu-title" href="create-new-user.html">Create New
+                                                        User<span class="sub-arrow"><i
+                                                                class="fa fa-angle-right"></i></span>
+                                                        <div class="according-menu"><i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar-list"><a class="sidebar-link sidebar-title"
+                                                href="../index.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-log-in">
+                                                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                    <polyline points="10 17 15 12 10 7"></polyline>
+                                                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                                                </svg> <span class="">Logout</span></a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Page Sidebar Ends-->
+            <div class="page-body">
+                <div class="container-fluid">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h3>Inbound Calls</h3>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"> <i data-feather="home"></i></a>
+                                    </li>
+                                    <li class="breadcrumb-item">Inbound Calls</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container-fluid starts-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header pb-0 mb-4">
+                                    <h5 class="mb-3">Inbound Calls Table: </h5>
+                                    <form action="" class="mb-4">
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-lg-3 col-12">
+                                                <input type="date" id="fromDate" class="form-control">
+                                            </div>
+                                            <div class="col-lg-1 col-12 text-center">
+                                                <label for="" class="form-label f-w-700 f-16">To</label>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <input type="date" id="toDate" class="form-control">
+                                            </div>
+                                            <div class="col-lg-2 col-12">
+                                                <button type="button" class="btn btn-primary"><i
+                                                        class="fa fa-download mx-2" aria-hidden="true"></i>Export
+                                                    Data</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-body table-responsive p-0 table-wrapper-scroll-y my-custom-scrollbar">
+                                    <table class="table table-hover text-nowrap text-center table-striped">
+                                        <thead class="border-top">
+                                            <tr>
+                                                <th>S No.</th>
+                                                <th>VTP Name</th>
+                                                <th>ABN</th>
+                                                <th>Roll No.</th>
+                                                <th>Name</th>
+                                                <th>Date of Birth</th>
+                                                <th>Mobile No.</th>
+                                                <th>Gender</th>
+                                                <th>Category</th>
+                                                <th>Handicapped</th>
+                                                <th>District</th>
+                                                <th>City</th>
+                                                <th>Gram Panchayat</th>
+                                                <th>User Address</th>
+                                                <th>Sector</th>
+                                                <th>Course</th>
+                                                <th>Date of Exam</th>
+                                                <th>Company Name</th>
+                                                <th>Company Address</th>
+                                                <th>Type of Employment</th>
+                                                <th>Employee's Type of Employment</th>
+                                                <th>Salary Details</th>
+                                                <th>Appointment Date</th>
+                                                <th>Entrant</th>
+                                                <th>Entry Date</th>
+                                                <th>Verification Status</th>
+                                                <th>Information Status</th>
+                                                <th>Verification Doc</th>
+                                                <th>Remarks</th>
+                                                <th>Received Date</th>
+                                                <th>Name</th>
+                                                <th>Connection Status (Yes / No)</th>
+                                                <th>If Not Connected, Reason</th>
+                                                <th>More Details of Feedback Correct/ Incorrect</th>
+                                                <th>Feedback</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><a href="" data-bs-toggle="modal"
+                                                        data-bs-target="#complaintPopup">Govt. Woman ITI Bilaspur</a>
+                                                </td>
+                                                <td>0201G003GAR10513D1400011213</td>
+                                                <td>0201G003GAR10513D142</td>
+                                                <td>SHABNAM SINGH</td>
+                                                <td>08-03-1994</td>
+                                                <td>9993181707</td>
+                                                <td>Female</td>
+                                                <td>General</td>
+                                                <td>No</td>
+                                                <td>BILASPUR</td>
+                                                <td></td>
+                                                <td>Amartal</td>
+                                                <td>VI. & PO. SEEPAT BILASPUR (C.G.)</td>
+                                                <td>GARMENT MAKING</td>
+                                                <td>Tailor (Basic Sewing Operator) </td>
+                                                <td>19-12-2013</td>
+                                                <td>GHAR ME SILAI KA KAM</td>
+                                                <td>VILL POST SEEPAT DIST BILASPUR</td>
+                                                <td>Self Employed</td>
+                                                <td>NA</td>
+                                                <td>2500</td>
+                                                <td>05-02-2014</td>
+                                                <td>VTP</td>
+                                                <td>04-05-2019</td>
+                                                <td>Not Verified</td>
+                                                <td></td>
+                                                <td>View</td>
+                                                <td></td>
+                                                <td>16-06-2023</td>
+                                                <td>Pooja</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><button type="button"
+                                                        class="btn btn-primary-gradien btn-sm btn-feedback">Feedback</button>
+                                                </td>
+                                                <td> <span class="text-success f-w-700 f-12">Success</span>
+                                                </td>
+                                                <td><button type="button"
+                                                        class="btn btn-success-gradien btn-sm btn-update">
+                                                        Update Status
+                                                    </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Govt. Woman ITI Bilaspur</td>
+                                                <td>0201G003GAR10513D1400011213</td>
+                                                <td>0201G003GAR10513D1413</td>
+                                                <td>DRAUPATI YADAV</td>
+                                                <td>05-06-1994</td>
+                                                <td>9713299098</td>
+                                                <td>Female</td>
+                                                <td>OBC</td>
+                                                <td>No</td>
+                                                <td>BILASPUR</td>
+                                                <td></td>
+                                                <td>Nariyara</td>
+                                                <td>VI. & PO. SEEPAT BILASPUR (C.G.)</td>
+                                                <td>GARMENT MAKING</td>
+                                                <td>Tailor (Basic Sewing Operator) </td>
+                                                <td>19-12-2013</td>
+                                                <td>GHAR ME SILAI KA KAM</td>
+                                                <td>VILL POST SEEPAT DIST BILASPUR</td>
+                                                <td>Self Employed</td>
+                                                <td>NA</td>
+                                                <td>2500</td>
+                                                <td>05-02-2014</td>
+                                                <td>VTP</td>
+                                                <td>04-05-2019</td>
+                                                <td>Not Verified</td>
+                                                <td></td>
+                                                <td>View</td>
+                                                <td></td>
+                                                <td>16-06-2023</td>
+                                                <td>Pooja</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><button type="button"
+                                                        class="btn btn-primary-gradien btn-sm btn-feedback">Feedback</button>
+                                                </td>
+                                                <td> <span class="text-warning f-w-700 f-12">Pending</span>
+                                                </td>
+                                                <td><button type="button"
+                                                        class="btn btn-success-gradien btn-sm btn-update">
+                                                        Update Status
+                                                    </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Govt. Woman ITI Bilaspur</td>
+                                                <td>0201G003GAR10513D1300011213</td>
+                                                <td>0201G003GAR10513D135</td>
+                                                <td>YOGESHWARI</td>
+                                                <td>04-08-1989</td>
+                                                <td>8085132813</td>
+                                                <td>Female</td>
+                                                <td>OBC</td>
+                                                <td>No</td>
+                                                <td>BILASPUR</td>
+                                                <td></td>
+                                                <td>Chandniya</td>
+                                                <td>VI. & PO. SEEPAT BILASPUR (C.G.)</td>
+                                                <td>GARMENT MAKING</td>
+                                                <td>Tailor (Basic Sewing Operator) </td>
+                                                <td>19-12-2013</td>
+                                                <td>GHAR ME SILAI KA KAM</td>
+                                                <td>VILL POST SEEPAT DIST BILASPUR</td>
+                                                <td>Self Employed</td>
+                                                <td>NA</td>
+                                                <td>2500</td>
+                                                <td>05-02-2014</td>
+                                                <td>VTP</td>
+                                                <td>04-05-2019</td>
+                                                <td>Not Verified</td>
+                                                <td></td>
+                                                <td>View</td>
+                                                <td></td>
+                                                <td>16-06-2023</td>
+                                                <td>Pooja</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><button type="button"
+                                                        class="btn btn-primary-gradien btn-sm btn-feedback">Feedback</button>
+                                                </td>
+                                                <td> <span class="text-danger f-w-700 f-12">Unsuccess</span>
+                                                </td>
+                                                <td><button type="button"
+                                                        class="btn btn-success-gradien btn-sm btn-update">
+                                                        Update Status
+                                                    </button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container-fluid Ends-->
+                <!-- Complaint Details Popup -->
+                <div class="modal fade" id="complaintPopup" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="complaintPopupLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary">
+                                <h5 class="modal-title" id="complaintPopupLabel">Call Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body mt-3">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <p>VTP Name:
+                                            <u class="bg-light-info text-dark py-2 px-1">Govt. Woman ITI Bilaspur</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>ABN:
+                                            <u class="bg-light-info text-dark py-2 px-1">0201G003GAR10513D1400011213</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Roll No.:
+                                            <u class="bg-light-info text-dark py-2 px-1">0201G003GAR10513D142</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Name:
+                                            <u class="bg-light-info text-dark py-2 px-1">SHABNAM SINGH</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Date of Birth:
+                                            <u class="bg-light-info text-dark py-2 px-1">08-03-1994</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Mobile No.:
+                                            <u class="bg-light-info text-dark py-2 px-1">9993181707</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Gender:
+                                            <u class="bg-light-info text-dark py-2 px-1">Female</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Category:
+                                            <u class="bg-light-info text-dark py-2 px-1">General</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Handicapped:
+                                            <u class="bg-light-info text-dark py-2 px-1">No</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>District:
+                                            <u class="bg-light-info text-dark py-2 px-1">BILASPUR</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>City:
+                                            <u class="bg-light-info text-dark py-2 px-1"></u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Gram Panchayat:
+                                            <u class="bg-light-info text-dark py-2 px-1">Amartal</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>User Address:
+                                            <u class="bg-light-info text-dark py-2 px-1">VI. & PO. SEEPAT BILASPUR
+                                                (C.G.)</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Sector:
+                                            <u class="bg-light-info text-dark py-2 px-1">GARMENT MAKING</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Course:
+                                            <u class="bg-light-info text-dark py-2 px-1">Tailor (Basic Sewing
+                                                Operator)</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Date of Exam:
+                                            <u class="bg-light-info text-dark py-2 px-1">19-12-2013</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Company Name:
+                                            <u class="bg-light-info text-dark py-2 px-1">GHAR ME SILAI KA KAM</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Company Address:
+                                            <u class="bg-light-info text-dark py-2 px-1"> VILL POST SEEPAT DIST
+                                                BILASPUR</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Type of Employment:
+                                            <u class="bg-light-info text-dark py-2 px-1">Self Employed</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Employee's Type of Employment:
+                                            <u class="bg-light-info text-dark py-2 px-1">NA</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Salary Details:
+                                            <u class="bg-light-info text-dark py-2 px-1">2500</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Appointment Date:
+                                            <u class="bg-light-info text-dark py-2 px-1">05-02-2014</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Entrant:
+                                            <u class="bg-light-info text-dark py-2 px-1">VTP</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Entry Date:
+                                            <u class="bg-light-info text-dark py-2 px-1">04-05-2019</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Verification Status:
+                                            <u class="bg-light-info text-dark py-2 px-1">Not Verified</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Verification Doc :
+                                            <u class="bg-light-info text-dark py-2 px-1">View</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Received Date:
+                                            <u class="bg-light-info text-dark py-2 px-1">16-06-2023</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Name:
+                                            <u class="bg-light-info text-dark py-2 px-1">Pooja </u>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <p>Status:
+                                            <span class="text-success">Success</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer start-->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 text-center p-0">
+                            <p class="mb-0">Copyright © Patio Digital 2023. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="../assets/js/scrollbar/simplebar.js"></script>
+    <script src="../assets/js/scrollbar/custom.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <!-- Template js-->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
