@@ -14,7 +14,7 @@ $(document).ready(function () {
             window.location.replace("./caller/index.html");
         }
         else if ($('input:text').val() == "nixi" && $('input:password').val() == "nixi@1234") {
-            window.location.replace("./nixi-admin/index.html");
+            window.location.replace("./rudseti-admin/index.html");
         }
         else {
             alert('Wrong !');

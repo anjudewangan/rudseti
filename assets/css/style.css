@@ -29242,7 +29242,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background-color: rgba(92, 97, 242, 0.08);
+    background-color: rgba(203, 226, 154, 0.4);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -29257,7 +29257,7 @@ footer {
 
 .user-profile .post-about ul li .icon i {
     font-size: 18px;
-    color: #2D2D8D
+    color: #556E32
 }
 
 .user-profile .post-about ul li h5 {
