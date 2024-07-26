@@ -35,8 +35,6 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
     <!-- Font Awsome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <!-- Date Picker -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 </head>
 
@@ -218,7 +216,7 @@
                                             </div>
                                             <div class="col-lg-3 col-12">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" name="daterange" id="date"
+                                                    <input type="text" class="form-control" name="daterange"
                                                         aria-label="datePicker" aria-describedby="basic-2"
                                                         value="01/01/2018 - 01/15/2018" />
                                                     <span class="input-group-text cursor-default-hover"
@@ -260,6 +258,7 @@
                                                 <th>Status</th>
                                                 <th>Name of the RSETI </th>
                                                 <th>Course</th>
+                                                <th>Qualification</th>
                                                 <th>Duration</th>
                                                 <th>Batch No.</th>
                                                 <th>Date of Training</th>
@@ -281,6 +280,7 @@
                                                 <td><span class="badge rounded-pill bg-success">Closed</span></td>
                                                 <td>SBI Port Blair</td>
                                                 <td>Agricultural EDPs</td>
+                                                <td>Bee Keeping</td>
                                                 <td>80 Hours/10 Days</td>
                                                 <td>NARQ30044</td>
                                                 <td>28/05/2024</td>
@@ -308,6 +308,7 @@
                                                 <td>Chhattisgarh</td>
                                                 <td>7896547896</td>
                                                 <td>arun123@gmail.com</td>
+                                                <td><span class="badge rounded-pill bg-info">New</span></td>
                                                 <td><span class="badge rounded-pill bg-info">New</span></td>
                                                 <td>_</td>
                                                 <td>_</td>
@@ -408,10 +409,9 @@
     <script src="../assets/js/config.js"></script>
     <script src="../assets/js/sidebar-menu.js"></script>
     <!-- Daterange Picker -->
-    <script src="../assets/js/form/datepicker.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js" integrity="sha512-Ff5AdoHz3vQThC2scsjxohVP7viZvTzrYjJCgEuvOinHOa5xrYk7vPumK1n721HpJ7W5aqHFt+8Ptv9HwMf7tA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/form/daterangepicker.js"></script>
+    <script src="../assets/js/form/daterange-picker.custom.js"></script>
     <!-- Excel Export -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="../assets/js/table/export-excel.js"></script>
