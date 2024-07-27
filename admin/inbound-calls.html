@@ -242,7 +242,6 @@
                                                 <th>Last Name</th>
                                                 <th>Mobile No.</th>
                                                 <th>Email ID</th>
-                                                <th>Status</th>
                                                 <th>Aadhar No.</th>
                                                 <th>Age</th>
                                                 <th>Date of Birth</th>
@@ -258,12 +257,12 @@
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>24-06-0001</td>
+                                                <td><a href="" data-bs-toggle="modal"
+                                                        data-bs-target="#detailsPopup">24-06-0001</a></td>
                                                 <td>Nazir</td>
                                                 <td>Sekh</td>
                                                 <td>9284281080</td>
                                                 <td>Accounts@gitipl.com</td>
-                                                <td><span class="badge rounded-pill bg-success">Closed</span></td>
                                                 <td>111122223333</td>
                                                 <td>30</td>
                                                 <td>16/07/1993</td>
@@ -293,7 +292,6 @@
                                                 <td>Sharma</td>
                                                 <td>7206292771</td>
                                                 <td>Jagritsharma05@gmail.com</td>
-                                                <td><span class="badge rounded-pill bg-info">New</span></td>
                                                 <td>444455557777</td>
                                                 <td>26</td>
                                                 <td>16/07/1996</td>
@@ -323,7 +321,6 @@
                                                 <td>Sharma</td>
                                                 <td>778899556</td>
                                                 <td>arunSharma123@gmail.com</td>
-                                                <td><span class="badge rounded-pill bg-warning">Open</span></td>
                                                 <td>552277889966</td>
                                                 <td>30</td>
                                                 <td>16/08/1993</td>
@@ -354,7 +351,99 @@
                     </div>
                 </div>
                 <!-- Container-fluid Ends-->
-                <!-- Popup -->
+                <!-- Details Popup -->
+                <div class="modal fade" id="detailsPopup" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="detailsPopupLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <h5 class="modal-title" id="detailsPopupLabel">Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body mt-3">
+                                <div class="row">
+                                    <div class="col-auto mb-3">
+                                        <p>Complaint & Query No. :
+                                            <u class="bg-light-info text-dark py-2 px-1">24-06-0001</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>First Name :
+                                            <u class="bg-light-info text-dark py-2 px-1">Nazir</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Last Name :
+                                            <u class="bg-light-info text-dark py-2 px-1">Sekh</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Mobile No. :
+                                            <u class="bg-light-info text-dark py-2 px-1">9284281080</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Email ID :
+                                            <u class="bg-light-info text-dark py-2 px-1">Accounts@gitipl.com</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Aadhar No. :
+                                            <u class="bg-light-info text-dark py-2 px-1">111122223333</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Age :
+                                            <u class="bg-light-info text-dark py-2 px-1">30</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Date of Birth :
+                                            <u class="bg-light-info text-dark py-2 px-1">16/07/1993</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Category :
+                                            <u class="bg-light-info text-dark py-2 px-1">General</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Gender :
+                                            <u class="bg-light-info text-dark py-2 px-1">Male</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>District :
+                                            <u class="bg-light-info text-dark py-2 px-1">Durg</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>State :
+                                            <u class="bg-light-info text-dark py-2 px-1">Chhattisgarh</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Pin Code :
+                                            <u class="bg-light-info text-dark py-2 px-1">492001</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Date :
+                                            <u class="bg-light-info text-dark py-2 px-1">28/05/2024</u>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                <a href="edit-inbound-calls.html">
+                                    <button type="button" class="btn btn-success">Update Status</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="modal fade" id="deletePopup" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="deletePopupLabel" aria-hidden="true">
                     <div class="modal-dialog">

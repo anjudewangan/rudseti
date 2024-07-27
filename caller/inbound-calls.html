@@ -35,8 +35,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
     <!-- Font Awsome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-      <!-- Date Picker -->
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- Date Picker -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 </head>
 
@@ -60,14 +60,15 @@
                     <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light"
                                 src="../assets/images/logoIcon/logo.webp" alt="Logo" width="120" height="80"></a>
                         <div class="back-btn"><i data-feather="grid"></i></div>
-                        <div class="toggle-sidebar icon-box-sidebar">  <i class="fa fa-th-large status_toggle middle sidebar-toggle" aria-hidden="true"></i></div>
+                        <div class="toggle-sidebar icon-box-sidebar"> <i
+                                class="fa fa-th-large status_toggle middle sidebar-toggle" aria-hidden="true"></i></div>
                     </div>
                     <div class="logo-icon-wrapper"><a href="index.html">
                             <div class="icon-box-sidebar"><i class="fa fa-th-large" aria-hidden="true"></i></div>
                         </a></div>
                     <nav class="sidebar-main">
                         <div class="left-arrow" id="left-arrow">
-                          <i data-feather="arrow-left"></i>
+                            <i data-feather="arrow-left"></i>
                         </div>
                         <div id="sidebar-menu">
                             <ul class="sidebar-links" id="simple-bar">
@@ -78,15 +79,15 @@
                                 <li class="menu-box">
                                     <ul>
                                         <li class="sidebar-list"><a class="sidebar-link sidebar-title"
-                                                href="index.html"><i class="fa fa-home"
-                                                aria-hidden="true"></i><span
+                                                href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span
                                                     class="lan-3">Dashboard</span></a> </li>
-                                        <li class="sidebar-list">    <a class="sidebar-link sidebar-title" href="javascript:void(0)"><i class="fa fa-file-text-o"
-                                          aria-hidden="true"></i><span>Forms</span>
-                                        <div class="according-menu">
-                                          <i class="fa fa-angle-right"></i>
-                                        </div>
-                                      </a>
+                                        <li class="sidebar-list"> <a class="sidebar-link sidebar-title"
+                                                href="javascript:void(0)"><i class="fa fa-file-text-o"
+                                                    aria-hidden="true"></i><span>Forms</span>
+                                                <div class="according-menu">
+                                                    <i class="fa fa-angle-right"></i>
+                                                </div>
+                                            </a>
                                             <ul class="sidebar-submenu">
                                                 <li><a class="submenu-title" href="javascript:void(0)">Inbound<span
                                                             class="sub-arrow"><i class="fa fa-angle-right"></i></span>
@@ -208,7 +209,8 @@
                                     </form>
                                 </div>
                                 <div class="card-body p-0 table-responsive table-wrapper-scroll-y my-custom-scrollbar">
-                                    <table class="table table-hover text-nowrap text-center table-striped" id="data-table">
+                                    <table class="table table-hover text-nowrap text-center table-striped"
+                                        id="data-table">
                                         <thead class="border-top bg-success">
                                             <tr>
                                                 <th>S. No.</th>
@@ -217,7 +219,6 @@
                                                 <th>Last Name</th>
                                                 <th>Mobile No.</th>
                                                 <th>Email ID</th>
-                                                <th>Status</th>
                                                 <th>Aadhar No.</th>
                                                 <th>Age</th>
                                                 <th>Date of Birth</th>
@@ -232,12 +233,12 @@
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>24-06-0001</td>
+                                                <td><a href="" data-bs-toggle="modal"
+                                                        data-bs-target="#detailsPopup">24-06-0001</a></td>
                                                 <td>Nazir</td>
                                                 <td>Sekh</td>
                                                 <td>9284281080</td>
                                                 <td>Accounts@gitipl.com</td>
-                                                <td><span class="badge rounded-pill bg-success">Closed</span></td>
                                                 <td>111122223333</td>
                                                 <td>30</td>
                                                 <td>16/07/1993</td>
@@ -255,7 +256,6 @@
                                                 <td>Sharma</td>
                                                 <td>7206292771</td>
                                                 <td>Jagritsharma05@gmail.com</td>
-                                                <td><span class="badge rounded-pill bg-info">New</span></td>
                                                 <td>444455557777</td>
                                                 <td>26</td>
                                                 <td>16/07/1996</td>
@@ -273,7 +273,6 @@
                                                 <td>Sharma</td>
                                                 <td>778899556</td>
                                                 <td>arunSharma123@gmail.com</td>
-                                                <td><span class="badge rounded-pill bg-warning">Open</span></td>
                                                 <td>552277889966</td>
                                                 <td>30</td>
                                                 <td>16/08/1993</td>
@@ -287,6 +286,96 @@
                                         </tbody>
                                     </table>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Details Popup -->
+                <div class="modal fade" id="detailsPopup" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="detailsPopupLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <h5 class="modal-title" id="detailsPopupLabel">Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body mt-3">
+                                <div class="row">
+                                    <div class="col-auto mb-3">
+                                        <p>Complaint & Query No. :
+                                            <u class="bg-light-info text-dark py-2 px-1">24-06-0001</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>First Name :
+                                            <u class="bg-light-info text-dark py-2 px-1">Nazir</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Last Name :
+                                            <u class="bg-light-info text-dark py-2 px-1">Sekh</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Mobile No. :
+                                            <u class="bg-light-info text-dark py-2 px-1">9284281080</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Email ID :
+                                            <u class="bg-light-info text-dark py-2 px-1">Accounts@gitipl.com</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Aadhar No. :
+                                            <u class="bg-light-info text-dark py-2 px-1">111122223333</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Age :
+                                            <u class="bg-light-info text-dark py-2 px-1">30</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Date of Birth :
+                                            <u class="bg-light-info text-dark py-2 px-1">16/07/1993</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Category :
+                                            <u class="bg-light-info text-dark py-2 px-1">General</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Gender :
+                                            <u class="bg-light-info text-dark py-2 px-1">Male</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>District :
+                                            <u class="bg-light-info text-dark py-2 px-1">Durg</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>State :
+                                            <u class="bg-light-info text-dark py-2 px-1">Chhattisgarh</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Pin Code :
+                                            <u class="bg-light-info text-dark py-2 px-1">492001</u>
+                                        </p>
+                                    </div>
+                                    <div class="col-auto mb-3">
+                                        <p>Date :
+                                            <u class="bg-light-info text-dark py-2 px-1">28/05/2024</u>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                             </div>
                         </div>
                     </div>
@@ -307,14 +396,14 @@
     <!-- Sidebar jquery-->
     <script src="../assets/js/config.js"></script>
     <script src="../assets/js/sidebar-menu.js"></script>
-      <!-- Daterange Picker -->
-      <script src="../assets/js/form/datepicker.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <!-- Excel Export -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-      <script src="../assets/js/table/export-excel.js"></script>
+    <!-- Daterange Picker -->
+    <script src="../assets/js/form/datepicker.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- Excel Export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="../assets/js/table/export-excel.js"></script>
     <!-- Template js-->
     <script src="../assets/js/script.js"></script>
 </body>
