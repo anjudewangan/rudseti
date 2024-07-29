@@ -13,7 +13,7 @@ $(document).ready(function () {
         else if ($('input:text').val() == "caller" && $('input:password').val() == "caller@1234") {
             window.location.replace("./caller/index.html");
         }
-        else if ($('input:text').val() == "nixi" && $('input:password').val() == "nixi@1234") {
+        else if ($('input:text').val() == "rudseti" && $('input:password').val() == "rudseti@1234") {
             window.location.replace("./rudseti-admin/index.html");
         }
         else {
