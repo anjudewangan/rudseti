@@ -248,14 +248,15 @@
                                         <div class="row mb-3 gy-3">
                                             <div class="col-md-6">
                                                 <label class="control-label">Gender</label>
-                                                <select class="form-select" aria-label="Default select example" required="required">
+                                                <select class="form-select" aria-label="Default select example"
+                                                    required="required">
                                                     <option selected disabled value="">
-                                                      Select Gender
+                                                        Select Gender
                                                     </option>
                                                     <option value="">Male</option>
                                                     <option value="">Female</option>
                                                     <option value="">Other</option>
-                                                  </select>
+                                                </select>
                                                 <div class="valid-feedback">
                                                     Looks good!
                                                 </div>
@@ -264,47 +265,65 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <label class="control-label">Village/Taluk/District</label>
+                                                <label class="control-label" for="inputState">State</label>
                                                 <select class="form-select" aria-label="Default select example"
-                                                    required="required" id="inputDistrict1">
-                                                    <option selected disabled value="">Select Village/Taluk/District
+                                                    required="required" id="inputState">
+                                                    <option selected disabled value="SelectState">Select State
                                                     </option>
-                                                    <option value="Balod">Balod</option>
-                                                    <option value="Balodabazar">Balodabazar</option>
-                                                    <option value="Balrampur">Balrampur</option>
-                                                    <option value="Bastar">Bastar</option>
-                                                    <option value="Bemetara">Bemetara</option>
-                                                    <option value="Bijapur">Bijapur</option>
-                                                    <option value="Bilashpur">Bilashpur</option>
-                                                    <option value="Dantewada">Dantewada</option>
-                                                    <option value="Dhamtari">Dhamtari</option>
-                                                    <option value="Durg">Durg</option>
-                                                    <option value="Gariaband">Gariaband</option>
-                                                    <option value="Janjgir Champa">Janjgir Champa</option>
-                                                    <option value="Jashpur">Jashpur</option>
-                                                    <option value="Kanker">Kanker</option>
-                                                    <option value="Kabir Dham">Kabir Dham</option>
-                                                    <option value="Khairagarh-Chhuikhadan-Gandai">
-                                                        Khairagarh-Chhuikhadan-Gandai</option>
-                                                    <option value="Korba">Korba</option>
-                                                    <option value="Konda Gaon">Konda Gaon</option>
-                                                    <option value="Koriya">Koriya</option>
-                                                    <option value="Mahasamund">Mahasamund</option>
-                                                    <option value="Manendragarh">Manendragarh</option>
-                                                    <option value="Mungeli">Mungeli</option>
-                                                    <option value="Mohla Manpur">Mohla Manpur</option>
-                                                    <option value="Narayanpur">Narayanpur</option>
-                                                    <option value="Pendra Gaurela Marwahi">Pendra Gaurela
-                                                        Marwahi</option>
-                                                    <option value="Raigarh">Raigarh</option>
-                                                    <option value="Raipur">Raipur</option>
-                                                    <option value="Rajnandgaon">Rajnandgaon</option>
-                                                    <option value="Sarangarh Bilaigarh">Sarangarh Bilaigarh
+                                                    <option value="Andra Pradesh">Andra Pradesh</option>
+                                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                    <option value="Assam">Assam</option>
+                                                    <option value="Bihar">Bihar</option>
+                                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                                    <option value="Goa">Goa</option>
+                                                    <option value="Gujarat">Gujarat</option>
+                                                    <option value="Haryana">Haryana</option>
+                                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                    <option value="Jharkhand">Jharkhand</option>
+                                                    <option value="Karnataka">Karnataka</option>
+                                                    <option value="Kerala">Kerala</option>
+                                                    <option value="Madya Pradesh">Madya Pradesh</option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Manipur">Manipur</option>
+                                                    <option value="Meghalaya">Meghalaya</option>
+                                                    <option value="Mizoram">Mizoram</option>
+                                                    <option value="Nagaland">Nagaland</option>
+                                                    <option value="Orissa">Orissa</option>
+                                                    <option value="Punjab">Punjab</option>
+                                                    <option value="Rajasthan">Rajasthan</option>
+                                                    <option value="Sikkim">Sikkim</option>
+                                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                                    <option value="Telangana">Telangana</option>
+                                                    <option value="Tripura">Tripura</option>
+                                                    <option value="Uttaranchal">Uttaranchal</option>
+                                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                    <option value="West Bengal">West Bengal</option>
+                                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar
+                                                        Islands</option>
+                                                    <option value="Chandigarh">Chandigarh</option>
+                                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli
                                                     </option>
-                                                    <option value="Sakti">Sakti</option>
-                                                    <option value="Sukma">Sukma</option>
-                                                    <option value="Surajpur">Surajpur</option>
-                                                    <option value="Surguja">Surguja</option>
+                                                    <option value="Daman and Diu">Daman and Diu</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Lakshadeep">Lakshadeep</option>
+                                                    <option value="Pondicherry">Pondicherry</option>
+                                                </select>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid state.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row gy-3">
+                                            <div class="col-md-6">
+                                                <label class="control-label"
+                                                    for="inputDistrict">Village/Taluk/District</label>
+                                                <select class="form-select" aria-label="Default select example"
+                                                    required="required" id="inputDistrict">
+                                                    <option value="">Select Village/Taluk/District</option>
                                                 </select>
                                                 <div class="valid-feedback">
                                                     Looks good!
@@ -313,58 +332,6 @@
                                                     Please provide a valid district.
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="mb-3 row gy-3">
-                                          <div class="col-md-6">
-                                            <label class="control-label" for="inputCity1">State</label>
-                                            <select class="form-select" aria-label="Default select example"
-                                                required="required" id="inputCity1">
-                                                <option selected disabled value="">Select State
-                                                </option>
-                                                <option value="AP">Andhra Pradesh</option>
-                                                <option value="AR">Arunachal Pradesh</option>
-                                                <option value="AS">Assam</option>
-                                                <option value="BR">Bihar</option>
-                                                <option value="CT">Chhattisgarh</option>
-                                                <option value="GA">Gujarat</option>
-                                                <option value="HR">Haryana</option>
-                                                <option value="HP">Himachal Pradesh</option>
-                                                <option value="JK">Jammu and Kashmir</option>
-                                                <option value="GA">Goa</option>
-                                                <option value="JH">Jharkhand</option>
-                                                <option value="KA">Karnataka</option>
-                                                <option value="KL">Kerala</option>
-                                                <option value="MP">Madhya Pradesh</option>
-                                                <option value="MH">Maharashtra</option>
-                                                <option value="MN">Manipur</option>
-                                                <option value="ML">Meghalaya</option>
-                                                <option value="MZ">Mizoram</option>
-                                                <option value="NL">Nagaland</option>
-                                                <option value="OR">Odisha</option>
-                                                <option value="PB">Punjab</option>
-                                                <option value="RJ">Rajasthan</option>
-                                                <option value="SK">Sikkim</option>
-                                                <option value="TN">Tamil Nadu</option>
-                                                <option value="TG">Telangana</option>
-                                                <option value="TR">Tripura</option>
-                                                <option value="UT">Uttarakhand</option>
-                                                <option value="UP">Uttar Pradesh</option>
-                                                <option value="WB">West Bengal</option>
-                                                <option value="AN">Andaman and Nicobar Islands</option>
-                                                <option value="CH">Chandigarh</option>
-                                                <option value="DN">Dadra and Nagar Haveli</option>
-                                                <option value="DD">Daman and Diu</option>
-                                                <option value="DL">Delhi</option>
-                                                <option value="LD">Lakshadweep</option>
-                                                <option value="PY">Puducherry</option>
-                                            </select>
-                                            <div class="valid-feedback">
-                                                Looks good!
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                Please provide a valid state.
-                                            </div>
-                                          </div>
                                         </div>
                                         <button class="btn btn-success" type="submit">Update</button>
                                     </form>
