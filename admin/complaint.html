@@ -27,6 +27,7 @@
     <!-- Flag icon-->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" integrity="sha512-Ujn3LMQ8mHWqy7EPP32eqGKBhBU8v39JRIfCer4nTZqlsSZIwy5g3Wz9SaZrd6pp3vmjI34yyzguZ2KQ66CLSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Bootstrap css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <!-- App css-->
@@ -351,8 +352,7 @@
                                                     </div>
                                                     <div class="mb-3">
                                                         <label class="control-label">Date of Birth</label>
-                                                        <input class="form-control mt-1" type="date"
-                                                            required="required">
+                                                        <input class="datepicker-here form-control digits" type="text" data-language="en" placeholder="DD/MM/YYYY" required="required">
                                                         <div class="valid-feedback">
                                                             Looks good!
                                                         </div>
@@ -1017,6 +1017,8 @@
     <script src="../assets/js/form/form-wizard1.js"></script>
     <script src="../assets/js/form/form-wizard2.js"></script>
     <script src="../assets/js/form/form-wizard3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js" integrity="sha512-sM9DpZQXHGs+rFjJYXE1OcuCviEgaXoQIvgsH7nejZB64A09lKeTU4nrs/K6YxFs6f+9FF2awNeJTkaLuplBhg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/form/datepicker.en.js"></script>
     <script src="../assets/js/tooltip-init.js"></script>
     <!-- Template js-->
     <script src="../assets/js/script.js"></script>

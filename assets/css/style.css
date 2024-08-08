@@ -30501,8 +30501,8 @@ footer {
 
 .page-wrapper .page-header .header-wrapper .nav-right>ul>li:nth-child(n+2):hover svg,
 .page-wrapper .page-header .header-wrapper .nav-right>ul>li:nth-child(n+2):hover i {
-    stroke: #fff;
-    color: #fff
+    stroke: #000;
+    color: #000;
 }
 
 .flex-shrink-0 {
