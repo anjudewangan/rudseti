@@ -46509,8 +46509,8 @@ body.dark-only .sitemap-container a {
 .daterangepicker td.available:hover,
 .daterangepicker th.available:hover {
     border-color: rgba(0, 0, 0, 0);
-    background-color: var(--theme-deafult);
-    color: #fff
+    background-color: var(--theme-deafult) !important;
+    color: #000;
 }
 
 .daterangepicker td.week,
@@ -46555,7 +46555,7 @@ body.dark-only .sitemap-container a {
 .daterangepicker td.active:hover {
     background-color: #357ebd;
     border-color: rgba(0, 0, 0, 0);
-    color: #fff
+    color: #000;
 }
 
 .daterangepicker th.month {
